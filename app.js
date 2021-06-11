@@ -14,4 +14,4 @@ app.use(express.static(__dirname + '/public'));
 
 app.use(express.static(__dirname + '/views'));
 
-app.listen(8000, function() {return  console.log('Servidor corriendo')});
+app.listen(process.env.PORT || 3000, function() {console.log('Servidor corriendo')});
